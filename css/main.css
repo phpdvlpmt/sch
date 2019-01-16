@@ -1,4 +1,10 @@
 .btn {
   margin: 10px;
 }
+
+img {
+  display: block;
+  width: 30vw;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=main.css.map */
