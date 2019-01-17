@@ -1,10 +1,121 @@
-.btn {
-  margin: 10px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-img {
+.navbar {
+  background: #1d2705 !important;
+}
+
+header {
+  background-image: url("/dist/img/skola.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  -webkit-box-shadow: 0px 2px 5px;
+          box-shadow: 0px 2px 5px;
+}
+
+header .header-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+
+header .header-overlay h1 {
+  color: #ffffff;
+  text-shadow: 4px 2px 2px #000000;
+}
+
+header .header-overlay h1::before {
+  content: "";
   display: block;
-  width: 30vw;
-  margin: 0 auto;
+  height: 2px;
+  background: #ffffff;
+}
+
+header .header-overlay p {
+  margin-top: 100px;
+}
+
+header .header-overlay .btn {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+.btn {
+  background: #1d2705;
+  border: none;
+}
+
+.btn:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  background: #3f540b;
+  border: none;
+}
+
+.card {
+  -webkit-box-shadow: 4px 2px 20px #000000;
+          box-shadow: 4px 2px 20px #000000;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner .card-img-top {
+  height: 130px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.inner .card-img-top:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.bg-semitransparent {
+  background-color: rgba(60, 60, 60, 0.6);
+}
+
+footer {
+  background: #1d2705;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  margin: 20px;
 }
 /*# sourceMappingURL=main.css.map */
