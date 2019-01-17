@@ -1,8 +1,85 @@
-.btn {
-  margin: 10px;
+* {
+  margin: 0;
+  padding: 0;
 }
-img {
-  display: block;
-  width: 30vw;
-  margin: 0 auto;
+.navbar {
+  // background: #637994 !important;
+  background: #1d2705 !important;
+}
+//heeader
+header {
+  background-image: url("/dist/img/skola.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  box-shadow: 0px 2px 5px;
+  .header-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    h1 {
+      color: #ffffff;
+      text-shadow: 4px 2px 2px #000000;
+      &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
+    p {
+      margin-top: 100px;
+    }
+    .btn {
+      transform: scale(1);
+      transition: all 5s ease;
+    }
+  }
+}
+//buttons
+.btn {
+  background: #1d2705;
+  border: none;
+  &:hover {
+    transition: all 1s ease;
+    background: lighten(#1d2705, 10);
+    border: none;
+  }
+}
+
+//card
+.card {
+  box-shadow: 4px 2px 20px #000000;
+  transition: all 1s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.inner {
+  overflow: hidden;
+
+  .card-img-top {
+    height: 130px;
+    transition: all 2s ease;
+
+    &:hover {
+      transform: scale(2);
+      cursor: zoom-in;
+    }
+  }
+}
+.bg-semitransparent {
+  background-color: rgba(60, 60, 60, 0.6);
+}
+footer {
+  background: #1d2705;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    margin: 20px;
+  }
 }

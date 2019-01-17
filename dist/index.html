@@ -3,92 +3,146 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />-->
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Testy online</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <h1 class="text-center">Testy online</h1>
-      <div class="row">
-        <img class="img-fluid" src="img/skola.jpg" alt="naše škola" />
-        <p class="text text-center">
-          <a
-            href="http://www.testpark.cz/testy/zemepis/hlavni-mesta-evropy-628"
-            target="_blank"
-            class="btn btn-lg btn-success"
-            >Hlavní města Evropy</a
-          >
-
-          <a
-            href="http://www.testpark.cz/testy/zemepis/evropa-a-cr-1124"
-            target="_blank"
-            class="btn btn-lg btn-success"
-            >Evropa a ČR</a
-          >
-          <a
-            href="http://www.testpark.cz/testy/zemepis/ceska-republika-634"
-            target="_blank"
-            class="btn btn-lg btn-success"
-          >
-            ČR</a
-          >
-          <a
-            href="http://www.brumlik.estranky.cz/file/497/slepamapaevropy.htm"
-            target="_blank"
-            class="btn btn-lg btn-success"
-          >
-            Slepá mapa světa</a
-          >
-          <a
-            href="http://www.brumlik.estranky.cz/file/913/slepamapaevropyy.htm"
-            target="_blank"
-            class="btn btn-lg btn-success"
-          >
-            Slepá mapa Evropy</a
-          >
-          <a
-            href="http://www.brumlik.estranky.cz/file/495/sousednistatycr.htm"
-            target="_blank"
-            class="btn btn-lg btn-success"
-          >
-            Sousední státy</a
-          >
-          <a
-            href="http://www.brumlik.estranky.cz/file/271/nasevlast.htm"
-            target="_blank"
-            class="btn btn-lg btn-success"
-          >
-            Naše vlast</a
-          >
-          <a
-            href="http://www.brumlik.estranky.cz/file/933/vodstvoevropy.htm"
-            target="_blank"
-            class="btn btn-lg btn-success"
-          >
-            Vodstvo Evropy</a
-          >
-        </p>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Naše škola</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#">Domů <span class="sr-only">(current)</span></a>
+        </div>
       </div>
+    </nav>
+    <!-- end Navbar-->
+    <!--Start Header-->
+    <header>
+      <div class="header-overlay">
+      <h1 class="display-md1">Testování online</h1>
+      <p><a href="#1" class="btn btn-lg btn-primary">Začínáme</a></p>
     </div>
+    </header>
+    <!--Start section 1-->
+    <section id="1" class="container mt-4 mb-4 pt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="inner"><img src="img/london.jpg" class="card-img-top" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Hlavní města Evropy</h5>
+              <p class="card-text text-center">Výběr ze čtyř možností. Test obsahuje 15 otázek.</p>
+              <a href="http://www.testpark.cz/testy/zemepis/hlavni-mesta-evropy-628" target="_blank" class="btn btn-primary d-block">Start</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="inner"><img src="img/paris.jpg" class="card-img-top" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Evropa a ČR</h5>
+              <p class="card-text text-center">Výběr ze čtyř možností. Test obsahuje 15 otázek.</p>
+              <a href="http://www.testpark.cz/testy/zemepis/evropa-a-cr-1124" target="_blank" class="btn btn-primary d-block">Start</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="inner"><img src="img/prague.jpg" class="card-img-top" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">ČR</h5>
+              <p class="card-text text-center">Výběr ze čtyř možností. Test obsahuje 10 otázek.</p>
+              <a href="http://www.testpark.cz/testy/zemepis/ceska-republika-634" target="_blank" class="btn btn-primary d-block">Start</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="inner"><img src="img/europe.jpg" class="card-img-top" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Slepá mapa Evropy</h5>
+              <p class="card-text text-center">Pokuste se vyplnit křížovku za použití mapy.</p>
+              <a href="http://www.brumlik.estranky.cz/file/913/slepamapaevropyy.htm" target="_blank" class="btn btn-primary d-block">Start</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--row 2-->
+      <div class="row mt-4">
+        <div class="card-group">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="inner"><img src="img/world.jpg" class="card-img-top" alt="..." /></div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Slepá mapa světa</h5>
+                <p class="card-text text-center">Pokuste se vyplnit křížovku za použití mapy.</p>
+                <a href="http://www.brumlik.estranky.cz/file/497/slepamapaevropy.htm" target="_blank" class="btn btn-primary d-block">Start</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="inner"><img src="img/cr.jpg" class="card-img-top" alt="..." /></div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Sousední státy</h5>
+                <p class="card-text text-center">Výběr ze čtyř možností. Test obsahuje 15 otázek.</p>
+                <a href="http://www.brumlik.estranky.cz/file/495/sousednistatycr.htm" target="_blank" class="btn btn-primary d-block">Start</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="inner"><img src="img/prague.jpg" class="card-img-top" alt="..." /></div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Naše vlast</h5>
+                <p class="card-text text-center">Výběr ze čtyř možností. Test obsahuje 10 otázek.</p>
+                <a href="http://www.brumlik.estranky.cz/file/271/nasevlast.htm" target="_blank" class="btn btn-primary d-block">Start</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+          <div class="card">
+            <div class="inner"><img src="img/europe.jpg" class="card-img-top" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Slepá mapa Evropy</h5>
+              <p class="card-text text-center">Vyplňte křížovku za použití mapy.</p>
+              <a href="http://www.brumlik.estranky.cz/file/497/slepamapaevropy.htm" target="_blank" class="btn btn-primary d-block">Start</a>
+            </div>
+          </div>
+        </div>
+         <!-- <div class="card">
+            <div class="inner"><img src="img/europe.jpg" class="card-img-top" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Vodstvo Evropy</h5>
+              <p class="card-text text-center">Vyplňte křížovku za použití mapy.</p>
+              <a href="http://www.brumlik.estranky.cz/file/933/vodstvoevropy.htm" target="_blank" class="btn btn-primary d-block">Start</a>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </section>
+    <!--end Section 1-->
+    <footer>
+      <p class="text-center text-white">&copy; 2019 Naše škola</p>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
