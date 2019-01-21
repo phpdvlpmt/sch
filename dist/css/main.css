@@ -98,10 +98,6 @@ header .header-overlay .btn {
   cursor: zoom-in;
 }
 
-.bg-semitransparent {
-  background-color: rgba(60, 60, 60, 0.6);
-}
-
 footer {
   background: #1d2705;
   display: -webkit-box;
@@ -117,5 +113,45 @@ footer {
 
 footer p {
   margin: 20px;
+}
+
+#animation {
+  display: block;
+  height: 30px;
+  overflow: hidden;
+}
+
+.animation-wrap {
+  position: relative;
+}
+
+.animation-object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1d2705;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  -webkit-animation: anim 5s ease 5s infinite alternate;
+          animation: anim 5s ease 5s infinite alternate;
+}
+
+@-webkit-keyframes anim {
+  from {
+    left: -25;
+  }
+  to {
+    left: 1500px;
+  }
+}
+
+@keyframes anim {
+  from {
+    left: -25;
+  }
+  to {
+    left: 1500px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
