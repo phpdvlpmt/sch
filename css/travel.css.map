@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AACD,AAAA,OAAO,CAAC;EAEN,UAAU,EAAE,kBAAkB;CAC/B",
+    "sources": [
+        "../../scss/travel.scss"
+    ],
+    "names": [],
+    "file": "travel.css"
+}
