@@ -33,20 +33,35 @@ header {
     p {
       margin-top: 100px;
     }
-    .btn {
-      transform: scale(1);
-      transition: all 5s ease;
+    #arrow::before {
+      content: "\2193";
+      color: #ffffff;
+      font-size: 6em;
+      font-weight: 900;
+      text-shadow: 2px 2px 5px #000000;
+      cursor: pointer;
+    }
+
+    #arrow {
+      animation: btn-anim 1s ease-in infinite alternate;
     }
   }
 }
 //buttons
 .btn {
   background: #1d2705;
-  border: none;
+  border-color: #1d2705;
+
   &:hover {
     transition: all 1s ease;
     background: lighten(#1d2705, 10);
-    border: none;
+    border: #1d2705;
+  }
+  &:visited {
+    border-color: #1d270d !important;
+  }
+  &:active {
+    border-color: #1d270d !important;
   }
 }
 
@@ -89,6 +104,7 @@ footer {
 }
 .animation-wrap {
   position: relative;
+  width: 100%;
 }
 
 .animation-object {
@@ -104,9 +120,17 @@ footer {
 }
 @keyframes anim {
   from {
-    left: -25;
+    left: 0%;
   }
   to {
-    left: 1500px;
+    left: calc(100% - 10px);
+  }
+}
+@keyframes btn-anim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(125px);
   }
 }

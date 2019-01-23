@@ -34,6 +34,7 @@
     <header>
       <div class="header-overlay">
         <h1 class="display-md1">Testování online</h1>
+        <span id="arrow"></span>
         <p><a data-scroll href="#1" class="btn btn-lg btn-primary">Začínáme</a></p>
       </div>
     </header>
@@ -127,8 +128,9 @@
     </section>
     <!--end Section 1-->
     <!--start section animation-->
+    <h4 class="text-center">Chytíš mě?</h4>
     <section id="animation">
-      <div class="animation-wrap"><div class="animation-object"></div></div>
+      <div class="animation-wrap"><div id="obj" class="animation-object"></div></div>
     </section>
     <!--End section annimation-->
     <!--Start Footer-->
@@ -154,6 +156,12 @@
       var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1500,
         speedAsDuration: true
+      });
+    </script>
+    <script>
+      var obj = document.getElementById("obj");
+      obj.addEventListener("click", function() {
+        alert("Povedlo se !!! ");
       });
     </script>
   </body>
