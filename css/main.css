@@ -50,23 +50,38 @@ header .header-overlay p {
   margin-top: 100px;
 }
 
-header .header-overlay .btn {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 5s ease;
-  transition: all 5s ease;
+header .header-overlay #arrow::before {
+  content: "\2193";
+  color: #ffffff;
+  font-size: 6em;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px #000000;
+  cursor: pointer;
+}
+
+header .header-overlay #arrow {
+  -webkit-animation: btn-anim 1s ease-in infinite alternate;
+          animation: btn-anim 1s ease-in infinite alternate;
 }
 
 .btn {
   background: #1d2705;
-  border: none;
+  border-color: #1d2705;
 }
 
 .btn:hover {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   background: #3f540b;
-  border: none;
+  border: #1d2705;
+}
+
+.btn:visited {
+  border-color: #1d270d !important;
+}
+
+.btn:active {
+  border-color: #1d270d !important;
 }
 
 .card {
@@ -123,6 +138,7 @@ footer p {
 
 .animation-wrap {
   position: relative;
+  width: 100%;
 }
 
 .animation-object {
@@ -139,19 +155,41 @@ footer p {
 
 @-webkit-keyframes anim {
   from {
-    left: -25;
+    left: 0%;
   }
   to {
-    left: 1500px;
+    left: calc(100% - 10px);
   }
 }
 
 @keyframes anim {
   from {
-    left: -25;
+    left: 0%;
   }
   to {
-    left: 1500px;
+    left: calc(100% - 10px);
+  }
+}
+
+@-webkit-keyframes btn-anim {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(125px);
+            transform: translateY(125px);
+  }
+}
+
+@keyframes btn-anim {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(125px);
+            transform: translateY(125px);
   }
 }
 /*# sourceMappingURL=main.css.map */
