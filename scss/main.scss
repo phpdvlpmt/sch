@@ -8,7 +8,7 @@
 }
 //heeader
 header {
-  background-image: url("../img/skola.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("../img/skola.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh;
@@ -18,7 +18,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.3);
+    //background: rgba(0, 0, 0, 0.3);
     height: 100vh;
     h1 {
       color: #ffffff;

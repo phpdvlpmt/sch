@@ -8,7 +8,8 @@
 }
 
 header {
-  background-image: url("../img/skola.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../img/skola.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("../img/skola.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh;
@@ -30,7 +31,6 @@ header .header-overlay {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
   height: 100vh;
 }
 
